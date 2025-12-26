@@ -1,7 +1,7 @@
 """
-    Mahafog Risat
-    Lab 3, Python conditional statement and loops
-    September 8th, 2025
+Mahafog Risat
+Lab 3, Python conditional statement and loops
+September 8th, 2025
 """
 
 # condtional statement
@@ -13,7 +13,7 @@ modify example 1
     - user can only guess three times. This can be done using a for loop or a while
 """
 
-#guess a number between 1 and 9
+# guess a number between 1 and 9
 GUESS_NUM = 8
 
 # collect the number
@@ -22,12 +22,12 @@ for attempts in range(3):
     # compare
     while user_number < 1 or user_number > 9:
         user_number = int(input("ERROR! Guess a number between 1 and 9: "))
-    if(user_number == GUESS_NUM):
+    if user_number == GUESS_NUM:
         print(f"Great Job! {user_number} is the guess mumber")
-    elif (user_number > GUESS_NUM):
+    elif user_number > GUESS_NUM:
         print(f"{user_number} should be lower")
-    elif (user_number < GUESS_NUM):
-            print(f"{user_number} should be higher")
+    elif user_number < GUESS_NUM:
+        print(f"{user_number} should be higher")
 else:
     print("ERROR!")
 
@@ -59,7 +59,7 @@ elif age_student >= 15 and age_student <= 17:
     lunch = "burger"
 else:
     lunch = "None"
-    
+
 print(f"At age {age_student} the food is {lunch}")
 
 print("\n ------ Example 3: For loops -----")
@@ -71,10 +71,10 @@ print("\n ------ Example 4: For loops in a list -----")
 years = [2011, 2005, 1998, 1980, 1973]
 for y in years:
     print(y)
-    
-for index in range (len(years)):
+
+for index in range(len(years)):
     print(f"Year {index + 1} = {years[index]}")
-    
+
 print("\n ------ Example 5: While loops as a counter -----")
 count = 1
 while count <= 5:
@@ -90,5 +90,5 @@ num = int(input("Enter a number between -5 and 5: "))
 
 while num < -5 or num > 5:
     num = int(input("ERROR! Enter a number between -5 and 5: "))
-    
+
 print(f"Entered number = {num}")

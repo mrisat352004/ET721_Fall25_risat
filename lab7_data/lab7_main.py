@@ -4,7 +4,7 @@ Lab 7, accessing data in a file
 October 15, 2025
 """
 
-from lab7_function import*
+from lab7_function import *
 
 testing()
 print("\n ----- example 1: reading file -----")

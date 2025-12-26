@@ -1,8 +1,9 @@
 """
-Mahafog Risat 
+Mahafog Risat
 Lab 8, unittesting
-October 1st, 2025 
+October 1st, 2025
 """
+
 import unittest
 from bankaccount import BankAccount
 
@@ -41,10 +42,10 @@ class TestBankAccount(unittest.TestCase):
     # Test a sequence of deposits and withdrawals to ensure correct balance calculations
     def test_sequence_of_transactions(self):
         # Start: 100
-        self.account.deposit(25)     # 125
-        self.account.withdraw(10)    # 115
-        self.account.deposit(5)      # 120
-        self.account.withdraw(20)    # 100
+        self.account.deposit(25)  # 125
+        self.account.withdraw(10)  # 115
+        self.account.deposit(5)  # 120
+        self.account.withdraw(20)  # 100
         self.assertEqual(self.account.get_balance(), 100)
 
 

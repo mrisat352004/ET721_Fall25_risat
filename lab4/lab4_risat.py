@@ -3,13 +3,10 @@ Mahafog Risat
 lab 4, dictionary and functions
 September 10, 2025
 """
+
 print("----- Example 1: dictionary -----")
 # contact dictionary with three different users
-contacts = {
-    "Bill" : "718-111-2222",
-    "Martha" : "646-000-3333",
-    "Peter" : "212-000-1111"
-}
+contacts = {"Bill": "718-111-2222", "Martha": "646-000-3333", "Peter": "212-000-1111"}
 
 print(contacts)
 
@@ -18,7 +15,7 @@ print(contacts)
 user1 = contacts["Martha"]
 print(f"user's phone number is {user1}")
 
-# Add new content to the dictionary 
+# Add new content to the dictionary
 
 contacts["Anna"] = "646-222-3333"
 print(contacts)
@@ -36,9 +33,9 @@ for i in contacts:
 
 for i in contacts:
     print(contacts[i])
-    
+
 # print each key:value set in the dictionary
-    
+
 for i in contacts:
     print(f"{i}: {contacts[i]}")
 
@@ -86,18 +83,26 @@ for word in word_count_dictionary:
     print(f"'{word}' appears {word_count_dictionary[word]}")
 
 print("----- EXERCISE -----")
-users = ["peterpan@yahoo.com", "annie@hotmail.com", "Carl@hotmail.com", "martha@gmail.com", "cassie@yahoo.com", "Josue@hotmail.com", "John@hotmail.com"]
+users = [
+    "peterpan@yahoo.com",
+    "annie@hotmail.com",
+    "Carl@hotmail.com",
+    "martha@gmail.com",
+    "cassie@yahoo.com",
+    "Josue@hotmail.com",
+    "John@hotmail.com",
+]
 
 # create an empty dictionary
 
 emails = {}
 
 for email in users:
-    email_type = email.split('@')[1].split('.')[0]
+    email_type = email.split("@")[1].split(".")[0]
     if email_type in emails:
         emails[email_type] += 1
     else:
         emails[email_type] = 1
-        
+
 for email_type in emails:
     print(f"'{email_type}' appears {emails[email_type]}")

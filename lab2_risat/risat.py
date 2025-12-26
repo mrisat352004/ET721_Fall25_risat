@@ -14,5 +14,3 @@ print(f"Welcome to Git commands {username}")
 
 num = 8
 print(f"Double of number {num} is {num*2}")
-
-
